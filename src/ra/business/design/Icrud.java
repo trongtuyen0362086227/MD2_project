@@ -10,5 +10,7 @@ public interface Icrud<T,E> {
     List<T> readFromfile();
     boolean writeToFile(List<T> list);
     T inputData(Scanner sc);
-    void displayData();
+    void displayData(T t);
+    List<T> findAll();
+    T findById(E id);
 }
